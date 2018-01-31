@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;User.java&apos; to &apos;CollaborationBackend/src/main/java/com.niit.model&apos;&#x0D;&#x0A;- Original project: &apos;collaboration_backend&apos;&#x0D;&#x0A;- Destination element: &apos;CollaborationBackend/src/main/java/com.niit.model&apos;&#x0D;&#x0A;- Original element: &apos;com.niit.model.User.java&apos;" description="Copy compilation unit" destination="=CollaborationBackend/src\/main\/java&lt;com.niit.model" element1="/src\/main\/java&lt;com.niit.model{User.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1516254223158" units="1" version="1.0"/>
+</session>

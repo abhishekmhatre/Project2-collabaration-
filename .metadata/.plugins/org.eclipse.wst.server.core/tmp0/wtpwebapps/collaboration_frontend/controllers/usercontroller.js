@@ -1,0 +1,50 @@
+/**
+ * UserController
+ */
+
+app.controller('UserController',function($scope,UserService,$location,$cookies)
+{
+	$scope.register=function()
+	{
+		UserService.register($scope.user).then
+		(
+			function(response)
+			{
+				alert('Registered successfully..Please Login.')
+				$location.path('/login')
+			},function(response)
+			{
+				$scope.error=response.data //ErrorClazz object
+			}
+		)
+	}
+	
+	$scope.login=function()
+	{
+		UserService.login($scope.user).then
+		(
+			function(response)
+			{
+				$rootScope.loggedInUser=response.data
+				$cookieStore.put('loggedInUser',response.data)
+				$location.path('/home') //valid credentials
+			},function(response)
+			{
+				$scope.error=response.data //ErrorClazz object
+				$location.path('/login') //invalid credentials
+			}
+		)
+	}
+	
+	$rootScope.logout=function()
+	{
+		UserService.logout().then(function(response)
+				{
+					$scope.message="Logout Successfully"
+					$location.path('/login')	
+				},function(response){
+					$scope.message="Please Login"
+					$location.path('/login')
+				})
+	}
+})

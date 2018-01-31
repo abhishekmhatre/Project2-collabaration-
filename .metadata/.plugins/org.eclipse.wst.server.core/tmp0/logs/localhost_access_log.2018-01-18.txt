@@ -1,0 +1,9 @@
+127.0.0.1 - - [18/Jan/2018:12:19:18 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [18/Jan/2018:12:19:35 +0530] "POST /collaboration_middleware/register HTTP/1.1" 500 15145
+0:0:0:0:0:0:0:1 - - [18/Jan/2018:12:20:52 +0530] "POST /collaboration_middleware/register HTTP/1.1" 500 15145
+0:0:0:0:0:0:0:1 - - [18/Jan/2018:12:21:09 +0530] "POST /collaboration_middleware/register HTTP/1.1" 500 15145
+0:0:0:0:0:0:0:1 - - [18/Jan/2018:12:22:11 +0530] "POST /collaboration_middleware/register HTTP/1.1" 400 1011
+0:0:0:0:0:0:0:1 - - [18/Jan/2018:12:22:36 +0530] "POST /collaboration_middleware/register HTTP/1.1" 400 1011
+0:0:0:0:0:0:0:1 - - [18/Jan/2018:12:29:55 +0530] "POST /collaboration_middleware/register HTTP/1.1" 500 15145
+0:0:0:0:0:0:0:1 - - [18/Jan/2018:12:31:27 +0530] "POST /collaboration_middleware/register HTTP/1.1" 400 1011
+0:0:0:0:0:0:0:1 - - [18/Jan/2018:12:31:44 +0530] "POST /collaboration_middleware/register HTTP/1.1" 500 15145

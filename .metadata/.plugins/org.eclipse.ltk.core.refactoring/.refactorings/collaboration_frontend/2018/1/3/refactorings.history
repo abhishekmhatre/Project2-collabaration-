@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;collaboration_frontend/WebContent/controllers/UserController.js&apos; to &apos;usercontroller.js&apos;" description="Rename resource &apos;UserController.js&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/controllers/UserController.js" name="usercontroller.js" stamp="1516342453915" updateReferences="true"/>
+</session>

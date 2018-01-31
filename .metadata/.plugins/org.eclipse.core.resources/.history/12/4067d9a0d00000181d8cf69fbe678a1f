@@ -1,0 +1,37 @@
+/**
+ * UserController
+ */
+
+app.controller('UserController',function($scope,UserService,$location)
+{
+	$scope.register=function()
+	{
+		UserService.register($scope.user).then
+		(
+			function(response)
+			{
+				alert('Registered successfully..Please Login.')
+				$location.path('/login')
+			},function(response)
+			{
+				$scope.error=response.data //ErrorClazz object
+			}
+		)
+	}
+	
+	$scope.login=function()
+	{
+		UserService.login($scope.user).then
+		(
+			function(response)
+			{
+			
+				$location.path('/home') //valid credentials
+			},function(response)
+			{
+				$scope.error=response.data //ErrorClazz object
+				$location.path('/login') //invalid credentials
+			}
+		)
+	}
+})

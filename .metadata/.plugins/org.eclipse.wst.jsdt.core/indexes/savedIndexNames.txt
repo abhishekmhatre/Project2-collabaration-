@@ -1,0 +1,10 @@
+INDEX VERSION 1.4+A:\Abhishek DT Project-2 Collaboration\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1600370755.index
+1270815814.index
+2488408173.index
+483990077.index
+2577413170.index
+3612203269.index
+898689568.index
+2412996461.index
+3407993616.index

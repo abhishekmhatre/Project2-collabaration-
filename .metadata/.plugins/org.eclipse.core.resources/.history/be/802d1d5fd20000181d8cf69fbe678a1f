@@ -1,0 +1,19 @@
+/**
+ *UserService 
+ */
+
+app.factory('UserService',function($http){
+	var userService={}
+	
+	var BASE_URL = "http://localhost:8085/collaboration_middleware"
+	
+	userService.register=function(user){
+	 return $http.post(BASE_URL + "/register",user)
+	}
+	
+	userService.login=function(user){ //email n password
+		 return $http.post(BASE_URL + "/login",user) //select * from user_s180233 where email=? and password=?;
+	}
+	
+	return userService;
+})

@@ -1,0 +1,10 @@
+127.0.0.1 - - [20/Jan/2018:11:50:13 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [20/Jan/2018:11:50:16 +0530] "GET /collaboration_frontend/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [20/Jan/2018:11:50:16 +0530] "GET /collaboration_frontend/js/app.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [20/Jan/2018:11:50:16 +0530] "GET /collaboration_frontend/controllers/usercontroller.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [20/Jan/2018:11:50:16 +0530] "GET /collaboration_frontend/services/userservice.js HTTP/1.1" 200 290
+0:0:0:0:0:0:0:1 - - [20/Jan/2018:11:51:43 +0530] "GET /collaboration_frontend/ HTTP/1.1" 200 975
+0:0:0:0:0:0:0:1 - - [20/Jan/2018:11:51:46 +0530] "GET /collaboration_frontend/controllers/usercontroller.js HTTP/1.1" 200 398
+0:0:0:0:0:0:0:1 - - [20/Jan/2018:11:51:46 +0530] "GET /collaboration_frontend/services/userservice.js HTTP/1.1" 200 290
+0:0:0:0:0:0:0:1 - - [20/Jan/2018:11:51:46 +0530] "GET /collaboration_frontend/js/app.js HTTP/1.1" 200 316
+0:0:0:0:0:0:0:1 - - [20/Jan/2018:11:51:47 +0530] "GET /favicon.ico HTTP/1.1" 404 1016

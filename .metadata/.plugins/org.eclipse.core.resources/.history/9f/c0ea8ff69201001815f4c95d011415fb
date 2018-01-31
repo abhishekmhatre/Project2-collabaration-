@@ -1,0 +1,22 @@
+/**
+ * AngularJS Module 
+ */
+
+var app=angular.module("app",['ng-route'])
+
+app.config(function($routeProvider)
+		{
+			$routeProvider
+			.when('/register',{
+				templateUrl:'views/registration.html',
+				controller:'UserController'
+			})
+			
+			.when('/login',{
+				templateUrl:'views/login.html',
+				controller:'UserController'
+			})
+			.otherwise({
+				templateUrl:'views/home.html'
+			})
+		})

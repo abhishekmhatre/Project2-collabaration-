@@ -1,0 +1,7 @@
+127.0.0.1 - - [19/Jan/2018:11:21:44 +0530] "GET / HTTP/1.1" 404 994
+127.0.0.1 - - [19/Jan/2018:11:27:25 +0530] "GET / HTTP/1.1" 404 994
+127.0.0.1 - - [19/Jan/2018:12:13:08 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [19/Jan/2018:12:13:25 +0530] "GET /collaboration_frontend/ HTTP/1.1" 200 975
+0:0:0:0:0:0:0:1 - - [19/Jan/2018:12:13:25 +0530] "GET /collaboration_frontend/controllers/usercontroller.js HTTP/1.1" 200 398
+0:0:0:0:0:0:0:1 - - [19/Jan/2018:12:13:25 +0530] "GET /collaboration_frontend/js/app.js HTTP/1.1" 200 316
+0:0:0:0:0:0:0:1 - - [19/Jan/2018:12:13:26 +0530] "GET /collaboration_frontend/services/userservice.js HTTP/1.1" 200 13

@@ -1,0 +1,12 @@
+<span style="color:red" ng-if="error.code==1">{{error.message}}</span>
+
+<form>
+<pre>
+
+Enter Email id: <input type="email" ng-model="user.email">
+Enter Password: <input type="password" ng-model="user.password">
+<input type="submit" ng-click="Login(user)">
+
+</pre>
+</form>
+
