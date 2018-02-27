@@ -56,6 +56,18 @@ public ResponseEntity<?> login(@RequestBody User user,HttpSession session){
 	}
 	
 	}
+
+@RequestMapping(value="/getuser",method=RequestMethod.GET)
+public ResponseEntity<?> getUser(HttpSession session){
+	String emailId=(String)session.getAttribute("loginId");
+	if(emailId==null){
+		ErrorClazz error=new ErrorClazz(4,"Unauthorized access.. Please login");
+		return new ResponseEntity<ErrorClazz>(error,HttpStatus.UNAUTHORIZED);//401 error function
+	}
+	User user=userDao.getUser(emailId);
+	return new ResponseEntity<User>(user,HttpStatus.OK);//success function
+}
+
 @RequestMapping(value="/logout",method=RequestMethod.PUT)
 public ResponseEntity<?> logout(HttpSession session){
 	String email=(String)session.getAttribute("loginId");
@@ -73,5 +85,16 @@ public ResponseEntity<?> logout(HttpSession session){
 	return new ResponseEntity<Void>(HttpStatus.OK);
 }
 
+@RequestMapping(value="/update",method=RequestMethod.PUT)
+public ResponseEntity<?> update(@RequestBody User user,HttpSession session){
+	String email=(String)session.getAttribute("loginId");
+	if(email==null){
+		ErrorClazz error=new ErrorClazz(3,"Unauthorized access");
+		return new ResponseEntity<ErrorClazz>(error,HttpStatus.UNAUTHORIZED);
+	}
+	userDao.update(user);
+	return new ResponseEntity<User>(user,HttpStatus.OK);
+}
 
 }
+
