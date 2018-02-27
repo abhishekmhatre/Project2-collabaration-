@@ -19,5 +19,9 @@ app.factory('UserService',function($http){
 		 return $http.put(BASE_URL + "/logout")
 		}
 	
+	userService.getUserDetails=function(){
+		return $http.get(BASE_URL + "/getUser")
+	}
+	
 	return userService;
 })

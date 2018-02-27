@@ -1,0 +1,13 @@
+@charset "ISO-8859-1";
+
+
+#registration-box{
+	width: 500px;
+	padding: 40px;
+	margin: 150px auto;
+	background: #fff;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border: 2px solid #000;
+}
+
