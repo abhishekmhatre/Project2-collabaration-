@@ -12,6 +12,12 @@ import org.springframework.orm.hibernate4.HibernateTransactionManager;
 import org.springframework.orm.hibernate4.LocalSessionFactoryBuilder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+import com.niit.model.BlogComment;
+import com.niit.model.BlogPost;
+import com.niit.model.BlogPostLikes;
+import com.niit.model.Job;
+import com.niit.model.Notification;
+import com.niit.model.ProfilePicture;
 import com.niit.model.User;
 
 
@@ -34,8 +40,15 @@ public class DBConfiguration
 		hibernateProperties.setProperty("hibernate.show_sql", "true");
 		lsf.addProperties(hibernateProperties);
 		//Class classes[]=new Class[]{Student.class};
-		Class classes[]=new Class[] {User.class};
+		Class classes[]=new Class[] {User.class,Job.class,BlogPost.class,BlogPostLikes.class,Notification.class,
+										BlogComment.class,ProfilePicture.class};
 		System.out.println("User table created");
+		System.out.println("Job table created");
+		System.out.println("BlogPost table created");
+		System.out.println("BlogPostLikes table created");
+		System.out.println("Notification table created");
+		System.out.println("BlogComment table created");
+		System.out.println("ProfilePicture table created");
 	    return lsf.addAnnotatedClasses(classes).buildSessionFactory();
 	}
 	@Bean
